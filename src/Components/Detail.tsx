@@ -80,7 +80,7 @@ const Detail = () => {
                   <div className="col-lg-12"></div>
                   <div className="col-lg-12">
                     <div className="form-group">
-                      <Link to="/" className="btn btn-danger">
+                      <Link to="/" className="btn btn-danger mt-2">
                         {" "}
                         Back
                       </Link>

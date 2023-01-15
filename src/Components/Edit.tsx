@@ -51,7 +51,7 @@ const Edit = () => {
       <div className="row">
         <div className="offset-lg-3 col-lg-6">
           <form className="container" onSubmit={handlesubmit}>
-            <div className="card" style={{ textAlign: "left" }}>
+            <div className="card">
               <div className="card-title">
                 <h2 className="text-center">User Edit</h2>
               </div>
@@ -59,13 +59,12 @@ const Edit = () => {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="form-group">
-                      <label>ID</label>
-                      <input value={id} className="form-control"></input>
+                      <label className="form-control">ID : {id}</label>
                     </div>
                   </div>
                   <div className="col-lg-12">
                     <div className="form-group">
-                      <label>Name</label>
+                      <label>Name:</label>
                       <input
                         required
                         value={name}
@@ -76,7 +75,7 @@ const Edit = () => {
                   </div>
                   <div className="col-lg-12">
                     <div className="form-group">
-                      <label>Email</label>
+                      <label>Email:</label>
                       <input
                         type="email"
                         value={email}
@@ -87,7 +86,7 @@ const Edit = () => {
                   </div>
                   <div className="col-lg-12">
                     <div className="form-group">
-                      <label>Phone</label>
+                      <label>Phone:</label>
                       <input
                         value={phone}
                         onChange={(e) => phonechange(e.target.value)}
@@ -98,10 +97,13 @@ const Edit = () => {
                   <div className="col-lg-12"></div>
                   <div className="col-lg-12">
                     <div className="form-group">
-                      <button className="btn btn-success" type="submit">
+                      <button
+                        className="btn btn-success mt-2 mx-2"
+                        type="submit"
+                      >
                         Save
                       </button>
-                      <Link to="/" className="btn btn-danger">
+                      <Link to="/" className="btn btn-danger mt-2">
                         {" "}
                         Back
                       </Link>

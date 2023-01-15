@@ -42,11 +42,11 @@ const List = () => {
     <div className="container">
       <div className="card">
         <div className="card-title">
-          <h2>User Listing</h2>
+          <h2 className="text-center">User Listing</h2>
         </div>
         <div className="card-body">
           <div className="divbtn">
-            <Link to="employee/create" className="btn btn-success">
+            <Link to="employee/create" className="btn btn-success mb-2">
               Add User
             </Link>
           </div>
@@ -72,7 +72,7 @@ const List = () => {
                       onClick={() => {
                         LoadEdit(item.id);
                       }}
-                      className="btn btn-success"
+                      className="btn btn-success mx-2"
                     >
                       Edit
                     </a>
@@ -81,7 +81,7 @@ const List = () => {
                       onClick={() => {
                         LoadDetail(item.id);
                       }}
-                      className="btn btn-primary"
+                      className="btn btn-primary mx-2"
                     >
                       Detail
                     </a>
@@ -89,7 +89,7 @@ const List = () => {
                       onClick={() => {
                         RemoveFunction(item.id);
                       }}
-                      className="btn btn-danger"
+                      className="btn btn-danger mx-2"
                     >
                       Remove
                     </a>

@@ -34,7 +34,7 @@ const Add = () => {
           <form className="container" onSubmit={handleChange}>
             <div className="card" style={{ textAlign: "left" }}>
               <div className="card-title">
-                <h2>User Create</h2>
+                <h2 className="text-center">User Create</h2>
               </div>
               <div className="card-body">
                 <div className="row">
@@ -83,10 +83,13 @@ const Add = () => {
                   <div className="col-lg-12"></div>
                   <div className="col-lg-12">
                     <div className="form-group">
-                      <button className="btn btn-success" type="submit">
+                      <button
+                        className="btn btn-success mt-2 mx-2"
+                        type="submit"
+                      >
                         Save
                       </button>
-                      <Link to="/" className="btn btn-danger">
+                      <Link to="/" className="btn btn-danger mt-2 ">
                         {" "}
                         Back
                       </Link>
