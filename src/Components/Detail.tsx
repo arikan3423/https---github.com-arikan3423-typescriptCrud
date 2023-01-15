@@ -9,8 +9,7 @@ const Detail = () => {
   const [active, activechange] = useState<boolean>(true);
   const navigate = useNavigate();
 
-  const handlesubmit = (e: any) => {
-    e.preventDefault();
+  const handlesubmit = () => {
     const userdata = { id, name, email, phone, active };
 
     fetch("http://localhost:8000/user/" + empid, {
