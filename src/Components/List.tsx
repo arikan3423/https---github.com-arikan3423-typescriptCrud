@@ -42,7 +42,7 @@ const List = () => {
     <div className="container">
       <div className="card">
         <div className="card-title">
-          <h2>Employee Listing</h2>
+          <h2>User Listing</h2>
         </div>
         <div className="card-body">
           <div className="divbtn">
@@ -76,14 +76,7 @@ const List = () => {
                     >
                       Edit
                     </a>
-                    <a
-                      onClick={() => {
-                        RemoveFunction(item.id);
-                      }}
-                      className="btn btn-danger"
-                    >
-                      Remove
-                    </a>
+
                     <a
                       onClick={() => {
                         LoadDetail(item.id);
@@ -91,6 +84,14 @@ const List = () => {
                       className="btn btn-primary"
                     >
                       Detail
+                    </a>
+                    <a
+                      onClick={() => {
+                        RemoveFunction(item.id);
+                      }}
+                      className="btn btn-danger"
+                    >
+                      Remove
                     </a>
                   </td>
                 </tr>

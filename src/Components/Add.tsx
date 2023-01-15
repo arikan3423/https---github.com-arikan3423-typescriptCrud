@@ -34,7 +34,7 @@ const Add = () => {
           <form className="container" onSubmit={handleChange}>
             <div className="card" style={{ textAlign: "left" }}>
               <div className="card-title">
-                <h2>Emplooye Create</h2>
+                <h2>User Create</h2>
               </div>
               <div className="card-body">
                 <div className="row">

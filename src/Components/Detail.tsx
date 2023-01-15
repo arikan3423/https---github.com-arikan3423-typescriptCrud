@@ -52,28 +52,30 @@ const Detail = () => {
         <div className="offset-lg-3 col-lg-6">
           <form className="container">
             <div className="card-title">
-              <h2>Emplooye Edit</h2>
+              <h2 className="text-center">User Detail</h2>
             </div>
             <div className="card-body">
               <div className="row">
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <label>ID: {id}</label>
+                    <label className="form-control">ID: {id}</label>
                   </div>
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <label>Name : {name}</label>
+                    <label className="form-control">Name : {name}</label>
                   </div>
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <label>Email: {email}</label>
+                    <label className="form-control">Email: {email}</label>
                   </div>
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <label>Phone : {phone} </label>
+                    <label className="form-control text-lg-left">
+                      Phone : {phone}{" "}
+                    </label>
                   </div>
                   <div className="col-lg-12"></div>
                   <div className="col-lg-12">
