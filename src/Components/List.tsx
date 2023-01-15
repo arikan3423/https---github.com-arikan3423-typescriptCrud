@@ -10,6 +10,9 @@ const List = () => {
   const LoadEdit = (id: number) => {
     navigate("/employe/edit/" + id);
   };
+  const LoadDetail = (id: number) => {
+    navigate("/employe/detail/" + id);
+  };
   const RemoveFunction = (id: number) => {
     fetch("http://localhost:8000/user/" + id, {
       method: "DELETE",
@@ -47,7 +50,6 @@ const List = () => {
               Add User
             </Link>
           </div>
-
           <table className="table table-bordered">
             <thead className="bg-dark text-white">
               <tr>
@@ -81,6 +83,14 @@ const List = () => {
                       className="btn btn-danger"
                     >
                       Remove
+                    </a>
+                    <a
+                      onClick={() => {
+                        LoadDetail(item.id);
+                      }}
+                      className="btn btn-primary"
+                    >
+                      Detail
                     </a>
                   </td>
                 </tr>

@@ -40,8 +40,7 @@ const Add = () => {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="form-group">
-                      <label>ID</label>
-                      <input value={id} className="form-control"></input>
+                      <input value={id} className="form-control" hidden></input>
                     </div>
                   </div>
                   <div className="col-lg-12">
@@ -49,6 +48,7 @@ const Add = () => {
                       <label>Name</label>
                       <input
                         required
+                        type="text"
                         value={name}
                         onChange={(e) => namechange(e.target.value)}
                         className="form-control"
@@ -59,6 +59,8 @@ const Add = () => {
                     <div className="form-group">
                       <label>Email</label>
                       <input
+                        type="email"
+                        placeholder="E-mail adresiniz.."
                         value={email}
                         onChange={(e) => emailchange(e.target.value)}
                         className="form-control"
@@ -69,6 +71,9 @@ const Add = () => {
                     <div className="form-group">
                       <label>Phone</label>
                       <input
+                        type="number"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="+90(500-000-00-00)"
                         value={phone}
                         onChange={(e) => phonechange(e.target.value)}
                         className="form-control"
