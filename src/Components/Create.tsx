@@ -1,7 +1,7 @@
 import { FormEvent, FormEventHandler, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const Add = () => {
+const Create = () => {
   const [id, idchange] = useState("");
   const [name, namechange] = useState("");
   const [email, emailchange] = useState("");
@@ -105,4 +105,4 @@ const Add = () => {
   );
 };
 
-export default Add;
+export default Create;

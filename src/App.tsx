@@ -58,9 +58,9 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import List from "./Components/List";
-import Add from "./Components/Add";
 import Edit from "./Components/Edit";
 import Detail from "./Components/Detail";
+import Create from "./Components/Create";
 
 function App() {
   return (
@@ -68,7 +68,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<List />}></Route>
-          <Route path="/employee/create" element={<Add />}></Route>
+          <Route path="/employee/create" element={<Create />}></Route>
           <Route path="/employe/edit/:empid" element={<Edit />}></Route>
           <Route path="/employe/detail/:empid" element={<Detail />}></Route>
         </Routes>
